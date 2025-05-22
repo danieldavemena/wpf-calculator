@@ -7,11 +7,24 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UseWPF>true</UseWPF>
-    <Title>Calcula</Title>
+    <Title>Calculator</Title>
+    <ApplicationIcon>assets\logo.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <IsPublishable>True</IsPublishable>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <IsPublishable>True</IsPublishable>
   </PropertyGroup>
 
   <ItemGroup>
     <None Remove="github.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="assets\logo.ico" />
   </ItemGroup>
 
   <ItemGroup>
@@ -32,5 +45,6 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
+
 
 </Project>
