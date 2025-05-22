@@ -107,7 +107,6 @@ namespace Wpf_Calculator
 
                     if (e.Key == Key.Escape)
                     {
-                        answer.Text = "1244";
                         btnClear_Click(sender, e);
                     }
                 } else
